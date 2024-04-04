@@ -3,6 +3,7 @@
 This a module description of the class Square
 """
 
+
 class Square:
     """Square Class Documentation
     This a description of the class Square
