@@ -11,7 +11,7 @@ class Square:
     """
     def __init__(self, size=0):
         """__init__"""
-        if (type(size) != int):
+        if (type(size) is not int):
             print("size must be an integer")
         if (size < 0):
             print("size must bi >= 0")
@@ -20,4 +20,4 @@ class Square:
 
     def area(self):
         """area"""
-        return(self.__size * 2)
+        return (self.__size ** 2)
