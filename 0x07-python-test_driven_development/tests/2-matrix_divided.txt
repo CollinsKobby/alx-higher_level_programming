@@ -1,0 +1,54 @@
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> matrix_divided(matrix, 2)
+[[0.5, 1.0, 1.5], [2.0, 2.5, 3.0]]
+>>> matrix_divided(matrix, 2.0)
+[[0.5, 1.0, 1.5], [2.0, 2.5, 3.0]]
+>>> matrix = [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
+>>> matrix_divided(matrix, 3)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+>>> matrix_divided(matrix, 3.0)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+>>> matrix = [[1.0, 2.0, 3.0], [4.0, 5.0, 'school']]
+>>> matrix_divided(matrix, 3.0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 14, in matrix_divided
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+>>> matrix = [1.0, 2.0, 3.0]
+>>> matrix_divided(matrix, 3.0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 2, in matrix_divided
+TypeError: object of type 'float' has no len()
+>>> matrix = [1, 2, 3]
+>>> matrix_divided(matrix, 3.0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 2, in matrix_divided
+TypeError: object of type 'int' has no len()
+>>> matrix = [[1.0, 2.0, 3.0], [4.0, 5.0]]
+>>> matrix_divided(matrix, 3.0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 7, in matrix_divided
+TypeError: Each row of the matrix must have the same size
+>>> matrix = [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
+>>> matrix_divided(matrix, 'School')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 9, in matrix_divided
+TypeError: div must be a number
+>>> matrix_divided(matrix, [1, 2])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 9, in matrix_divided
+TypeError: div must be a number
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 11, in matrix_divided
+ZeroDivisionError: division by zero
+
