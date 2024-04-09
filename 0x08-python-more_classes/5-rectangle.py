@@ -71,4 +71,4 @@ class Rectangle:
         """Deletes a rectangle
         return: Bye rectangle...
         """
-        print ("Bye rectangle...")
+        print("Bye rectangle...")
