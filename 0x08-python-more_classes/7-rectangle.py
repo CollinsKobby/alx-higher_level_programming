@@ -77,9 +77,9 @@ class Rectangle:
         return: Bye rectangle...
         """
         Rectangle.number_of_instances -= 1
-        print ("Bye rectangle...")
+        print("Bye rectangle...")
 
     def __str__(self):
         """string representation of the rectangle
         """
-        return '\n'.join([str(self.print_symbol) * self.__width] * self.__height)
+        return '\n'.join([str(self.print_symbol) * self.__width]*self.__height)
