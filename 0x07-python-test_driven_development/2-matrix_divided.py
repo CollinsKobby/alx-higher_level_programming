@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """
-This module is composed by a function the divides the values of a list by a given integer of float
-List must be a list of integers or floats
+This module is composed by a function the divides the values of a list
+by a given integer of float List must be a list of integers or floats
 """
+
+
 def matrix_divided(matrix, div):
     """ This functions divides the members of a list by a given value
     Args:
