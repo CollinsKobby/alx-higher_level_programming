@@ -7,7 +7,6 @@ def print_square(size):
     """ The print_square function prints a square of size
     Args:
     size - size length of the square
-    
     print_square(2)
     ##
     ## """
@@ -19,5 +18,5 @@ def print_square(size):
         raise TypeError("size must be an integer")
     else:
         for i in range(0, size):
-            print ('#' * size)
+            print('#' * size)
             i += 1
