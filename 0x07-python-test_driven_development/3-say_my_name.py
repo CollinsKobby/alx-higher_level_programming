@@ -2,6 +2,7 @@
 """ This module takes the first and last name of an individual
 """
 
+
 def say_my_name(first_name, last_name=""):
     """ say_my_nameprovides the first and last name of an individual
     Args:
@@ -13,4 +14,4 @@ def say_my_name(first_name, last_name=""):
     if not isinstance(last_name, str):
         raise TypeError("last_name must be a string")
     else:
-        print ("My name is {} {}".format(first_name, last_name)) 
+        print("My name is {} {}".format(first_name, last_name))
