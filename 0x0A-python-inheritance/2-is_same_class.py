@@ -1,4 +1,4 @@
-#usr/bin/python3
+#!/usr/bin/python3
 """ A module description of a simple function
 is_same_class """
 
