@@ -1,4 +1,4 @@
-#!/usrbin/python3
+#!/usr/bin/python3
 import json
 """ A module of a function called to_json_string """
 
