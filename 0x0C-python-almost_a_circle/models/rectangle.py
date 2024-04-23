@@ -2,6 +2,7 @@
 """ A module of a class called Base """
 from models.base import Base
 
+
 class Rectangle(Base):
     """ A class called Rectangle thats nheriting fron the
     class Base"""
