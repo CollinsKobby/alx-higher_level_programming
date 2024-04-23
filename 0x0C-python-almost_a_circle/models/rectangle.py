@@ -85,8 +85,11 @@ class Rectangle(Base):
     def display(self):
         """ To display the rectangle using # according to the
         size provided """
+        res = ' ' * self.__x
+        for i in range(self.__y):
+            print()
         for i in range(self.__height):
-            print('#' * self.__width)
+            print("{}{}".format(res, '#' * self.__width))
 
     def __str__(self):
         """ used to override to return in a different way """
