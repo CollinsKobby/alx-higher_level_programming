@@ -1,20 +1,6 @@
 #!/usr/bin/python3
 """ A module of a class called Base """
-
-
-class Base:
-    """ A class called Bass with class attribute set to 0
-    """
-    __nb_objects = 0
-
-    def __init__(self, id=None):
-        """ Class constructor """
-        if id is not None:
-            self.id = id
-        else:
-            Base.__nb_objects += 1
-            self.id = Base.__nb_objects
-
+from models.base import Base
 
 class Rectangle(Base):
     """ A class called Rectangle thats nheriting fron the
