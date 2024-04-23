@@ -43,3 +43,13 @@ class Square(Rectangle):
             if kwargs is not None:
                 for key, value in kwargs.items():
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        """ Gives a dictionary represenation of the attributes of the
+        square """
+        dict_res = {}
+        dict_res["id"] = self.id
+        dict_res["x"] = self.x
+        dict_res["size"] = self.size
+        dict_res["y"] = self.y
+        return dict_res
